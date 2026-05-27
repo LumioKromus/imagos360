@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="googlebot" content="noindex, nofollow">
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>imagos360</title>
+
+	<!-- Font Awesome -->
+	<link rel="stylesheet"
+		href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+
+	<!-- Google Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+	<style>
+		*{
+			margin:0;
+			padding:0;
+			box-sizing:border-box;
+		}
+
+		body{
+			font-family:'Poppins',sans-serif;
+			background:
+				radial-gradient(circle at top,
+				rgba(255,120,0,0.15),
+				transparent 30%),
+				linear-gradient(180deg,#0a0a0a,#111);
+			color:white;
+			min-height:100vh;
+			display:flex;
+			align-items:center;
+			justify-content:center;
+			padding:30px 20px;
+		}
+
+		.container{
+			width:100%;
+			max-width:520px;
+			background:rgba(255,255,255,0.04);
+			backdrop-filter:blur(12px);
+			border:1px solid rgba(255,255,255,0.08);
+			border-radius:28px;
+			padding:40px 28px;
+			box-shadow:
+				0 10px 40px rgba(0,0,0,0.5),
+				0 0 40px rgba(255,140,0,0.08);
+		}
+
+		.logo{
+			width:120px;
+			height:120px;
+			object-fit:cover;
+			border-radius:50%;
+			display:block;
+			margin:0 auto 22px;
+			box-shadow:
+				0 0 30px rgba(255,140,0,0.25);
+		}
+
+		h1{
+			text-align:center;
+			font-size:2rem;
+			font-weight:600;
+			letter-spacing:1px;
+			margin-bottom:8px;
+		}
+
+		.subtitle{
+			text-align:center;
+			font-size:0.95rem;
+			color:#cfcfcf;
+			line-height:1.6;
+			margin-bottom:35px;
+		}
+
+		.links{
+			display:flex;
+			flex-direction:column;
+			gap:14px;
+		}
+
+		.link-btn{
+			display:flex;
+			align-items:center;
+			gap:14px;
+			text-decoration:none;
+			color:white;
+			background:rgba(255,255,255,0.05);
+			border:1px solid rgba(255,255,255,0.06);
+			padding:16px 18px;
+			border-radius:18px;
+			transition:0.25s ease;
+		}
+
+		.link-btn:hover{
+			transform:translateY(-2px);
+			background:rgba(255,255,255,0.09);
+			border-color:rgba(255,140,0,0.3);
+			box-shadow:0 8px 24px rgba(0,0,0,0.35);
+		}
+
+		.link-btn i{
+			font-size:1.4rem;
+			width:28px;
+			text-align:center;
+		}
+
+		.link-text{
+			display:flex;
+			flex-direction:column;
+		}
+
+		.link-title{
+			font-size:0.95rem;
+			font-weight:500;
+		}
+
+		.link-url{
+			font-size:0.8rem;
+			color:#bdbdbd;
+		}
+
+		.footer{
+			text-align:center;
+			margin-top:28px;
+			font-size:0.8rem;
+			color:#8f8f8f;
+		}
+
+		.highlight{
+			background:linear-gradient(90deg,#ff9f43,#ff6b00);
+			-webkit-background-clip:text;
+			-webkit-text-fill-color:transparent;
+		}
+
+		@media(max-width:480px){
+
+			.container{
+				padding:32px 20px;
+			}
+
+			h1{
+				font-size:1.7rem;
+			}
+
+			.logo{
+				width:100px;
+				height:100px;
+			}
+		}
+	</style>
+</head>
+<body>
+
+	<div class="container">
+
+		<img src="logoImagos.png" alt="imagos360 Logo" class="logo">
+
+		<h1><span class="highlight">Imagos360</span></h1>
+
+		<p class="subtitle">
+			Lives musicales, producción audiovisual, multimedia,
+			fotografía, video, cursos, talleres y encuentros creativos.
+		</p>
+
+		<div class="links">
+
+			<a href="#" class="link-btn">
+				<i class="fab fa-instagram"></i>
+				<div class="link-text">
+					<span class="link-title">Instagram</span>
+					<span class="link-url">instagram.com/imagos360</span>
+				</div>
+			</a>
+
+			<a href="#" class="link-btn">
+				<i class="fab fa-facebook"></i>
+				<div class="link-text">
+					<span class="link-title">Facebook</span>
+					<span class="link-url">facebook.com/imagos360</span>
+				</div>
+			</a>
+
+			<a href="#" class="link-btn">
+				<i class="fas fa-camera-retro"></i>
+				<div class="link-text">
+					<span class="link-title">Taller y encuentros de Foto & Video</span>
+					<span class="link-url">facebook.com/groups/imagos.fotovideo</span>
+				</div>
+			</a>
+
+
+
+			<a href="#" class="link-btn">
+				<i class="fab fa-tiktok"></i>
+				<div class="link-text">
+					<span class="link-title">TikTok</span>
+					<span class="link-url">tiktok.com/@imagos360</span>
+				</div>
+			</a>
+
+			<a href="#" class="link-btn">
+				<i class="fab fa-youtube"></i>
+				<div class="link-text">
+					<span class="link-title">YouTube</span>
+					<span class="link-url">youtube.com/@imagos360</span>
+				</div>
+			</a>
+
+			<a href="#" class="link-btn">
+				<i class="fas fa-mug-hot"></i>
+				<div class="link-text">
+					<span class="link-title">Apoyar el Proyecto</span>
+					<span class="link-url">tecito.app/imagos360</span>
+				</div>
+			</a>
+
+			<a href="#" class="link-btn">
+				<i class="fab fa-whatsapp"></i>
+				<div class="link-text">
+					<span class="link-title">Contacto Directo</span>
+					<span class="link-url">wa.me/5493517570507</span>
+				</div>
+			</a>
+
+		</div>
+
+		<div class="footer">
+			imagos360 © 2026
+		</div>
+
+	</div>
+
+</body>
+</html>
