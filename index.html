@@ -228,7 +228,73 @@
 				</div>
 			</a>
 
-<div data-type="podcastsPlayer" data-publicToken="cb308b98-8aa8-4774-9350-76b8c47525e8" data-theme="dark" data-color="e81e4d" data-channelId="a1e2673a-7c76-437e-9826-06ba07be3e68" data-rendered="false" class="cstrEmbed"><a href="https://www.caster.fm">Shoutcast Hosting</a> <a href="https://www.caster.fm">Stream Hosting</a> <a href="https://www.caster.fm">Radio Server Hosting</a></div><script src="//cdn.cloud.caster.fm//widgets/embed.js"></script>
+```html
+<div class="imagos-radio-player">
+	<button id="playButton">▶ Play Imagos Radio</button>
+
+	<audio id="radioPlayer">
+		<source src="TU_STREAM_URL" type="audio/mpeg">
+	</audio>
+</div>
+
+<style>
+.imagos-radio-player{
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	margin-top:20px;
+}
+
+#playButton{
+	background:linear-gradient(135deg,#ff0055,#ff5500);
+	color:white;
+	border:none;
+	padding:16px 28px;
+	font-size:20px;
+	font-family:Arial,sans-serif;
+	border-radius:14px;
+	cursor:pointer;
+	box-shadow:0 0 20px rgba(255,0,100,0.5);
+	transition:all 0.3s ease;
+}
+
+#playButton:hover{
+	transform:scale(1.05);
+	box-shadow:0 0 30px rgba(255,0,100,0.8);
+}
+
+#playButton.playing{
+	background:linear-gradient(135deg,#00c853,#00e676);
+}
+</style>
+
+<script>
+const button = document.getElementById("playButton");
+const player = document.getElementById("radioPlayer");
+
+let playing = false;
+
+button.addEventListener("click", async () => {
+
+	if(!playing){
+		try{
+			await player.play();
+			button.innerHTML = "⏸ Pause Imagos Radio";
+			button.classList.add("playing");
+			playing = true;
+		}catch(err){
+			alert("No se pudo iniciar el stream.");
+		}
+	}else{
+		player.pause();
+		button.innerHTML = "▶ Play Imagos Radio";
+		button.classList.remove("playing");
+		playing = false;
+	}
+});
+</script>
+```
+
 		</div>
 
 		<div class="footer">
